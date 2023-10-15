@@ -1,24 +1,7 @@
 export type AniListMediaResponse = {
   data: {
     Page: {
-      media: {
-        siteUrl: string
-        startDate: {
-          year?: number
-          month?: number
-          day?: number
-        }
-        title: {
-          native?: string
-        }
-        coverImage: {
-          extraLarge?: string
-        }
-        externalLinks: {
-          url: string
-          type: string
-        }[]
-      }[]
+      media: AniListMedia[]
       pageInfo: {
         hasNextPage: boolean
       }
@@ -26,9 +9,26 @@ export type AniListMediaResponse = {
   }
 }
 
-export async function fetchAniListMedia(
-  page: number
-): Promise<AniListMediaResponse> {
+export type AniListMedia = {
+  siteUrl: string
+  startDate: {
+    year?: number
+    month?: number
+    day?: number
+  }
+  title: {
+    native?: string
+  }
+  coverImage: {
+    extraLarge?: string
+  }
+  externalLinks: {
+    url: string
+    type: string
+  }[]
+}
+
+async function fetchAniListMedia(page: number): Promise<AniListMediaResponse> {
   const response = await fetch('https://graphql.anilist.co', {
     method: 'POST',
     headers: {
@@ -69,4 +69,24 @@ export async function fetchAniListMedia(
   })
 
   return await response.json()
+}
+
+export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
+  const media: AniListMedia[] = []
+  let page = 1
+
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+  while (true) {
+    // eslint-disable-next-line no-await-in-loop
+    const { data } = await fetchAniListMedia(page)
+
+    media.push(...data.Page.media)
+
+    if (!data.Page.pageInfo.hasNextPage) {
+      break
+    }
+    page++
+  }
+
+  return media
 }

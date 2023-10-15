@@ -1,17 +1,14 @@
 import { StatusCodes } from 'http-status-codes'
 
-import { fetchAniListMedia } from '../lib/anilist.ts'
+import { fetchPaginatedAniListMedia } from '../lib/anilist.ts'
 
 import type { EventAttributes, DateArray } from 'ics'
 
 // eslint-disable-next-line import/no-default-export
 export default {
   async fetch(): Promise<Response> {
-    // TODO: paging
-    const media = await fetchAniListMedia(1)
-    console.log(JSON.stringify(media))
-
-    const events = media.data.Page.media
+    const media = await fetchPaginatedAniListMedia()
+    const events = media
       .map((media) => {
         if (
           !media.startDate.year ||
