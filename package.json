@@ -16,6 +16,11 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check ."
   },
+  "dependencies": {
+    "date-fns": "2.30.0",
+    "http-status-codes": "2.3.0",
+    "ics": "3.5.0"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230419.0",
     "@slashnephy/eslint-config": "2.0.35",
@@ -29,10 +34,5 @@
   "packageManager": "yarn@3.6.4",
   "eslintConfig": {
     "extends": "@slashnephy/eslint-config"
-  },
-  "dependencies": {
-    "date-fns": "2.30.0",
-    "http-status-codes": "2.3.0",
-    "ics": "3.5.0"
   }
 }
