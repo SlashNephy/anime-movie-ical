@@ -29,6 +29,7 @@ export default {
         )
 
         return {
+          uid: media.id.toString(),
           title: media.title.native,
           description: media.externalLinks
             .filter((link) => link.type === 'INFO')
