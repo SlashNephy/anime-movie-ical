@@ -1,0 +1,36 @@
+{
+  "name": "anime-movie-ical",
+  "version": "0.0.0",
+  "private": true,
+  "author": "SlashNephy <spica@starry.blue> (https://spica.starry.blue/)",
+  "repository": "https://github.com/SlashNephy/anime-movie-ical",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "format": "concurrently -n format: -m 1 'yarn:format:*'",
+    "format:eslint": "yarn lint:eslint --fix",
+    "format:prettier": "yarn lint:prettier --write",
+    "lint": "concurrently -n lint: 'yarn:lint:*'",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check ."
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "@slashnephy/eslint-config": "2.0.35",
+    "@slashnephy/prettier-config": "1.0.23",
+    "concurrently": "8.2.1",
+    "eslint": "8.51.0",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2",
+    "wrangler": "3.13.1"
+  },
+  "packageManager": "yarn@3.6.4",
+  "eslintConfig": {
+    "extends": "@slashnephy/eslint-config"
+  },
+  "dependencies": {
+    "http-status-codes": "2.3.0",
+    "ics": "3.5.0"
+  }
+}
