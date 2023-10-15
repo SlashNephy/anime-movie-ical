@@ -30,6 +30,7 @@
     "extends": "@slashnephy/eslint-config"
   },
   "dependencies": {
+    "date-fns": "2.30.0",
     "http-status-codes": "2.3.0",
     "ics": "3.5.0"
   }

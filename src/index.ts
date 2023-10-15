@@ -1,3 +1,4 @@
+import { addDays } from 'date-fns'
 import { StatusCodes } from 'http-status-codes'
 
 import { fetchPaginatedAniListMedia } from '../lib/anilist.ts'
@@ -18,6 +19,15 @@ export default {
           return undefined
         }
 
+        const end = addDays(
+          new Date(
+            media.startDate.year,
+            media.startDate.month - 1,
+            media.startDate.day
+          ),
+          1
+        )
+
         return {
           title: media.title.native,
           url: media.siteUrl,
@@ -34,8 +44,14 @@ export default {
             media.startDate.month,
             media.startDate.day,
           ] as const as DateArray,
-          duration: {},
           startInputType: 'utc',
+          startOutputType: 'utc',
+          end: [
+            end.getUTCFullYear(),
+            end.getUTCMonth() + 1,
+            end.getUTCDate(),
+          ] as const as DateArray,
+          endOutputType: 'utc',
           calName: 'アニメ映画 公開予定 (anime-movie-ical)',
           classification: 'PUBLIC',
           productId: 'anime-movie-ical',
@@ -48,7 +64,7 @@ export default {
     const { createEvents } = await import('ics')
     const { value, error } = createEvents(events)
     if (error) {
-      console.error(error)
+      console.error(JSON.stringify(error))
 
       return new Response('An error occurred', {
         status: StatusCodes.INTERNAL_SERVER_ERROR,

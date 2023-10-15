@@ -790,6 +790,7 @@ __metadata:
     "@slashnephy/eslint-config": 2.0.35
     "@slashnephy/prettier-config": 1.0.23
     concurrently: 8.2.1
+    date-fns: 2.30.0
     eslint: 8.51.0
     http-status-codes: 2.3.0
     ics: 3.5.0
@@ -1286,7 +1287,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:^2.30.0":
+"date-fns@npm:2.30.0, date-fns@npm:^2.30.0":
   version: 2.30.0
   resolution: "date-fns@npm:2.30.0"
   dependencies:
