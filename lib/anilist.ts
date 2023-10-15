@@ -10,7 +10,6 @@ export type AniListMediaResponse = {
 }
 
 export type AniListMedia = {
-  siteUrl: string
   startDate: {
     year?: number
     month?: number
@@ -18,9 +17,6 @@ export type AniListMedia = {
   }
   title: {
     native?: string
-  }
-  coverImage: {
-    extraLarge?: string
   }
   externalLinks: {
     url: string
@@ -39,7 +35,6 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaResponse> {
         query($page: Int!) {
           Page(page: $page, perPage: 50) {
             media(type: ANIME, format: MOVIE, status: NOT_YET_RELEASED, countryOfOrigin: JP, sort: START_DATE) {
-              siteUrl
               startDate {
                 year
                 month
@@ -47,9 +42,6 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaResponse> {
               }
               title {
                 native
-              }
-              coverImage {
-                extraLarge
               }
               externalLinks {
                 url

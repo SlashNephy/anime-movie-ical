@@ -30,15 +30,9 @@ export default {
 
         return {
           title: media.title.native,
-          url: media.siteUrl,
-          htmlContent: `
-            <!DOCTYPE html>
-            <html lang="ja">
-              <body>
-                <img src="${media.coverImage.extraLarge}" alt="${media.title.native}">
-              </body>
-            </html>
-          `,
+          description: media.externalLinks
+            .filter((link) => link.type === 'INFO')
+            .join('\n'),
           start: [
             media.startDate.year,
             media.startDate.month,
