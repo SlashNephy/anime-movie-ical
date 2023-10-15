@@ -33,6 +33,7 @@ export default {
           title: media.title.native,
           description: media.externalLinks
             .filter((link) => link.type === 'INFO')
+            .map((link) => link.url)
             .join('\n'),
           start: [
             media.startDate.year,
