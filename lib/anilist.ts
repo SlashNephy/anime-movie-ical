@@ -11,6 +11,7 @@ export type AniListMediaResponse = {
 
 export type AniListMedia = {
   id: number
+  siteUrl: string
   startDate: {
     year?: number
     month?: number
@@ -37,6 +38,7 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaResponse> {
           Page(page: $page, perPage: 50) {
             media(type: ANIME, format: MOVIE, status: NOT_YET_RELEASED, countryOfOrigin: JP, sort: START_DATE) {
               id
+              siteUrl
               startDate {
                 year
                 month

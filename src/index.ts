@@ -32,10 +32,12 @@ export default {
         return {
           uid: media.id.toString(),
           title: media.title.native,
-          description: media.externalLinks
-            .filter((link) => link.type === 'INFO')
-            .map((link) => link.url)
-            .join('\n'),
+          description: [
+            ...media.externalLinks
+              .filter((link) => link.type === 'INFO')
+              .map((link) => link.url),
+            media.siteUrl,
+          ].join('\n'),
           start: [
             start.getFullYear(),
             start.getMonth() + 1,
