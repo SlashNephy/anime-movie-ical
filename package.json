@@ -6,6 +6,7 @@
   "repository": "https://github.com/SlashNephy/anime-movie-ical",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "format": "concurrently -n format: -m 1 'yarn:format:*'",
