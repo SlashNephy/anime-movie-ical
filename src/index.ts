@@ -1,4 +1,4 @@
-import { addDays } from 'date-fns'
+import { addDays, addHours } from 'date-fns'
 import { StatusCodes } from 'http-status-codes'
 
 import { fetchPaginatedAniListMedia } from '../lib/anilist.ts'
@@ -19,14 +19,15 @@ export default {
           return undefined
         }
 
-        const end = addDays(
+        const start = addHours(
           new Date(
             media.startDate.year,
             media.startDate.month - 1,
             media.startDate.day
           ),
-          1
+          -9 // JST 0時の終日イベントにしたいので、時差の分引いておく
         )
+        const end = addDays(start, 1)
 
         return {
           uid: media.id.toString(),
@@ -36,17 +37,20 @@ export default {
             .map((link) => link.url)
             .join('\n'),
           start: [
-            media.startDate.year,
-            media.startDate.month,
-            media.startDate.day,
+            start.getFullYear(),
+            start.getMonth() + 1,
+            start.getDate(),
+            start.getHours(),
           ] as const as DateArray,
           startInputType: 'utc',
           startOutputType: 'utc',
           end: [
-            end.getUTCFullYear(),
-            end.getUTCMonth() + 1,
-            end.getUTCDate(),
+            end.getFullYear(),
+            end.getMonth() + 1,
+            end.getDate(),
+            end.getHours(),
           ] as const as DateArray,
+          endInputType: 'utc',
           endOutputType: 'utc',
           calName: 'アニメ映画 公開予定 (anime-movie-ical)',
           classification: 'PUBLIC',
