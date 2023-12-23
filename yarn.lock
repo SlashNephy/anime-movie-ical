@@ -928,7 +928,7 @@ __metadata:
     date-fns: 2.30.0
     eslint: 8.56.0
     http-status-codes: 2.3.0
-    ics: 3.7.1
+    ics: 3.7.2
     prettier: 3.1.1
     typescript: 5.3.3
     wrangler: 3.21.0
@@ -2931,14 +2931,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ics@npm:3.7.1":
-  version: 3.7.1
-  resolution: "ics@npm:3.7.1"
+"ics@npm:3.7.2":
+  version: 3.7.2
+  resolution: "ics@npm:3.7.2"
   dependencies:
     nanoid: ^3.1.23
     runes2: ^1.1.2
     yup: ^1.2.0
-  checksum: ecdac4c47ff60a4c808558548ec01e78d37095903f86e8cc721f37ad2b3bdba58c4a4772ed8b0e52f71fdab05ee0c2d3e987d4bf1e12a182d98a7869886b4a99
+  checksum: ce07dd0f2906f056e4078360832e6886bfa5222d9ef464102b91d29391a792ec81d5b646a71ed269a33ced22be735c677f111e8178a341a06500dea87b22f783
   languageName: node
   linkType: hard
 

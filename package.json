@@ -19,7 +19,7 @@
   "dependencies": {
     "date-fns": "2.30.0",
     "http-status-codes": "2.3.0",
-    "ics": "3.7.1"
+    "ics": "3.7.2"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230419.0",
