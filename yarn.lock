@@ -1599,7 +1599,7 @@ __metadata:
     ics: 3.7.2
     prettier: 3.2.4
     typescript: 5.3.3
-    wrangler: 3.23.0
+    wrangler: 3.25.0
   languageName: unknown
   linkType: soft
 
@@ -4480,9 +4480,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20231218.2":
-  version: 3.20231218.2
-  resolution: "miniflare@npm:3.20231218.2"
+"miniflare@npm:3.20231218.4":
+  version: 3.20231218.4
+  resolution: "miniflare@npm:3.20231218.4"
   dependencies:
     "@cspotcode/source-map-support": 0.8.1
     acorn: ^8.8.0
@@ -4491,14 +4491,14 @@ __metadata:
     exit-hook: ^2.2.1
     glob-to-regexp: ^0.4.1
     stoppable: ^1.1.0
-    undici: ^5.22.1
+    undici: ^5.28.2
     workerd: 1.20231218.0
     ws: ^8.11.0
     youch: ^3.2.2
     zod: ^3.20.6
   bin:
     miniflare: bootstrap.js
-  checksum: 299bc0d802bf7ce05eb24b00192bd42d51485224a94cbd817b6bca4b1485497d1655eb893bae46be1870bc32f57f46bf26ec481eed0f6275c61556acf09ec066
+  checksum: 3e0f29fa6d690a27cc7de56c3f09b8c389df4375e34d8ddcb4c06d345e9c6b4b4f9265c2350e2246564a48cebe6bd9d88afa3c1910e1501e0e062a0fb13bc377
   languageName: node
   linkType: hard
 
@@ -6007,7 +6007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.22.1":
+"undici@npm:^5.28.2":
   version: 5.28.2
   resolution: "undici@npm:5.28.2"
   dependencies:
@@ -6257,9 +6257,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.23.0":
-  version: 3.23.0
-  resolution: "wrangler@npm:3.23.0"
+"wrangler@npm:3.25.0":
+  version: 3.25.0
+  resolution: "wrangler@npm:3.25.0"
   dependencies:
     "@cloudflare/kv-asset-handler": ^0.2.0
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
@@ -6268,7 +6268,7 @@ __metadata:
     chokidar: ^3.5.3
     esbuild: 0.17.19
     fsevents: ~2.3.2
-    miniflare: 3.20231218.2
+    miniflare: 3.20231218.4
     nanoid: ^3.3.3
     path-to-regexp: ^6.2.0
     resolve: ^1.22.8
@@ -6282,7 +6282,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 094f433a6108fdd20d7dc1d4b121f18ed42c394ec0c827869975bcb7f0fbcd6f1a2b39ed3aa83a822641ae9147ccc53587d7153bad39d6a5c872a955f070c794
+  checksum: 9645c51271e9dd376a37799af413da0dc32ce76704fe6f1cbce14385960e98158e7cbe53d457d21c0e2fcaa598bf3dfc285781ab1074cd6a5390cfbf17857a08
   languageName: node
   linkType: hard
 
