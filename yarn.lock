@@ -179,12 +179,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/kv-asset-handler@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@cloudflare/kv-asset-handler@npm:0.2.0"
+"@cloudflare/kv-asset-handler@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@cloudflare/kv-asset-handler@npm:0.3.1"
   dependencies:
     mime: ^3.0.0
-  checksum: bc6a02a9c80be6de90e46454ef4de09301e68726eaa4835de0e30216e50fffcc5612274a17dfb455916cf3418f0cb25fefd2b561a9d2282f4cc10d40527f0acb
+  checksum: d9f1c9ff3cd00d05b60a3b62bd5955bab178c1a0249259aa014c3cfbaf5f1adf0f11e209bb01513507d02626676b30f71508f421dede0ee43bdf1803ad903191
   languageName: node
   linkType: hard
 
@@ -1605,7 +1605,7 @@ __metadata:
     ics: 3.7.2
     prettier: 3.2.5
     typescript: 5.3.3
-    wrangler: 3.28.1
+    wrangler: 3.28.2
   languageName: unknown
   linkType: soft
 
@@ -4501,9 +4501,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240129.1":
-  version: 3.20240129.1
-  resolution: "miniflare@npm:3.20240129.1"
+"miniflare@npm:3.20240129.2":
+  version: 3.20240129.2
+  resolution: "miniflare@npm:3.20240129.2"
   dependencies:
     "@cspotcode/source-map-support": 0.8.1
     acorn: ^8.8.0
@@ -4519,7 +4519,7 @@ __metadata:
     zod: ^3.20.6
   bin:
     miniflare: bootstrap.js
-  checksum: 5d9ca65f1838c79f936f596293ad8f23a5d6a2f872b7090ea83068b0596e3179462f3507cf55733ec96854c33214fbaee868cdead7b05e7954ada09b98c93163
+  checksum: 57f04c7be860edadc7215959b57dab75e9e24b1f089d80f8a73be9d111302853b46e0dcce6b8d48ec90cf59a732f29ecd9a7204e9f4a4a8fa0f351f96ca32eed
   languageName: node
   linkType: hard
 
@@ -6242,18 +6242,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.28.1":
-  version: 3.28.1
-  resolution: "wrangler@npm:3.28.1"
+"wrangler@npm:3.28.2":
+  version: 3.28.2
+  resolution: "wrangler@npm:3.28.2"
   dependencies:
-    "@cloudflare/kv-asset-handler": ^0.2.0
+    "@cloudflare/kv-asset-handler": 0.3.1
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     blake3-wasm: ^2.1.5
     chokidar: ^3.5.3
     esbuild: 0.17.19
     fsevents: ~2.3.2
-    miniflare: 3.20240129.1
+    miniflare: 3.20240129.2
     nanoid: ^3.3.3
     path-to-regexp: ^6.2.0
     resolve: ^1.22.8
@@ -6272,7 +6272,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 7d836f0d6980d27743ef8755a55541fabc9ddc9d0ec6d28bb03c6699f748d2af39ab196aea6169a891dd7130b1173ad3673e18733261506573ea4f9db2861e53
+  checksum: 7ac518c3cefe69d9cffdc8f6431d7516ff61904eaab50b6b7e69fd9438cab0aaad1cb6b5287b591b4e68bc7c5a13ffddc72fda603c56ba8571ce0b37b7b61847
   languageName: node
   linkType: hard
 
