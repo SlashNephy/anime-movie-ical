@@ -1656,7 +1656,7 @@ __metadata:
     ics: 3.7.2
     prettier: 3.2.5
     typescript: 5.4.5
-    wrangler: 3.57.0
+    wrangler: 3.57.1
   languageName: unknown
   linkType: soft
 
@@ -6427,9 +6427,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.57.0":
-  version: 3.57.0
-  resolution: "wrangler@npm:3.57.0"
+"wrangler@npm:3.57.1":
+  version: 3.57.1
+  resolution: "wrangler@npm:3.57.1"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.2
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
@@ -6457,7 +6457,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 3e6399a32a2f03993da20da8aaf58290ae086c5242c8f9a3d6f1967db9ca54a77fafa9f2760a2a4e18abbb113722f1b26915282b76f2b3854b44d71ac5f9da36
+  checksum: 0b82d231dce1f802d6bdc5076418835a55925c07d91c58a429d41e4133daf0c9f0ba9a8bff5bbf3d9aa232fd0eb9178f42ba8496ad69a2b968310bdd9a9ba618
   languageName: node
   linkType: hard
 
