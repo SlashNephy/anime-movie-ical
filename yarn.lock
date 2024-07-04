@@ -184,37 +184,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workerd-darwin-64@npm:1.20240620.1":
-  version: 1.20240620.1
-  resolution: "@cloudflare/workerd-darwin-64@npm:1.20240620.1"
+"@cloudflare/workerd-darwin-64@npm:1.20240701.0":
+  version: 1.20240701.0
+  resolution: "@cloudflare/workerd-darwin-64@npm:1.20240701.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@cloudflare/workerd-darwin-arm64@npm:1.20240620.1":
-  version: 1.20240620.1
-  resolution: "@cloudflare/workerd-darwin-arm64@npm:1.20240620.1"
+"@cloudflare/workerd-darwin-arm64@npm:1.20240701.0":
+  version: 1.20240701.0
+  resolution: "@cloudflare/workerd-darwin-arm64@npm:1.20240701.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@cloudflare/workerd-linux-64@npm:1.20240620.1":
-  version: 1.20240620.1
-  resolution: "@cloudflare/workerd-linux-64@npm:1.20240620.1"
+"@cloudflare/workerd-linux-64@npm:1.20240701.0":
+  version: 1.20240701.0
+  resolution: "@cloudflare/workerd-linux-64@npm:1.20240701.0"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@cloudflare/workerd-linux-arm64@npm:1.20240620.1":
-  version: 1.20240620.1
-  resolution: "@cloudflare/workerd-linux-arm64@npm:1.20240620.1"
+"@cloudflare/workerd-linux-arm64@npm:1.20240701.0":
+  version: 1.20240701.0
+  resolution: "@cloudflare/workerd-linux-arm64@npm:1.20240701.0"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@cloudflare/workerd-windows-64@npm:1.20240620.1":
-  version: 1.20240620.1
-  resolution: "@cloudflare/workerd-windows-64@npm:1.20240620.1"
+"@cloudflare/workerd-windows-64@npm:1.20240701.0":
+  version: 1.20240701.0
+  resolution: "@cloudflare/workerd-windows-64@npm:1.20240701.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1609,7 +1609,7 @@ __metadata:
     ics: 3.7.6
     prettier: 3.3.2
     typescript: 5.5.3
-    wrangler: 3.62.0
+    wrangler: 3.63.1
   languageName: unknown
   linkType: soft
 
@@ -4668,9 +4668,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240620.0":
-  version: 3.20240620.0
-  resolution: "miniflare@npm:3.20240620.0"
+"miniflare@npm:3.20240701.0":
+  version: 3.20240701.0
+  resolution: "miniflare@npm:3.20240701.0"
   dependencies:
     "@cspotcode/source-map-support": 0.8.1
     acorn: ^8.8.0
@@ -4680,13 +4680,13 @@ __metadata:
     glob-to-regexp: ^0.4.1
     stoppable: ^1.1.0
     undici: ^5.28.4
-    workerd: 1.20240620.1
-    ws: ^8.14.2
+    workerd: 1.20240701.0
+    ws: ^8.17.1
     youch: ^3.2.2
     zod: ^3.22.3
   bin:
     miniflare: bootstrap.js
-  checksum: b0313864f59833596511f769f7ce5545c03755fa0f7e344c59a5c949f454e3cb37c278cf5439362ebbd4df578f6a00a644437cdd9b9725ff399665ed09eadc2e
+  checksum: 9aaddc78b39726a2302f8aa5717a4f3119bf172df1a204d385c2e691ec4afb54d8b86a1943f46f480e5dbeabc16c55e086233e7f48fe091837072a0ea976b92b
   languageName: node
   linkType: hard
 
@@ -6513,15 +6513,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workerd@npm:1.20240620.1":
-  version: 1.20240620.1
-  resolution: "workerd@npm:1.20240620.1"
+"workerd@npm:1.20240701.0":
+  version: 1.20240701.0
+  resolution: "workerd@npm:1.20240701.0"
   dependencies:
-    "@cloudflare/workerd-darwin-64": 1.20240620.1
-    "@cloudflare/workerd-darwin-arm64": 1.20240620.1
-    "@cloudflare/workerd-linux-64": 1.20240620.1
-    "@cloudflare/workerd-linux-arm64": 1.20240620.1
-    "@cloudflare/workerd-windows-64": 1.20240620.1
+    "@cloudflare/workerd-darwin-64": 1.20240701.0
+    "@cloudflare/workerd-darwin-arm64": 1.20240701.0
+    "@cloudflare/workerd-linux-64": 1.20240701.0
+    "@cloudflare/workerd-linux-arm64": 1.20240701.0
+    "@cloudflare/workerd-windows-64": 1.20240701.0
   dependenciesMeta:
     "@cloudflare/workerd-darwin-64":
       optional: true
@@ -6535,13 +6535,13 @@ __metadata:
       optional: true
   bin:
     workerd: bin/workerd
-  checksum: 3af25d84b80bbbe37b9f102f6bb6ad99492e19570b7217a47944d3d0a76fff86bc5e50b9a4910136130a06d8d15a687d31b7b3e45515b190322debee2573ecb6
+  checksum: 13ac5a6550ff8cfa8cda32bb2e23523f98b1368dd327b820afdaf7b3a57e5bb01b1846084ceebe04cfee0499fc79a60d07182b2b84e72fb8d14795edd0067517
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.62.0":
-  version: 3.62.0
-  resolution: "wrangler@npm:3.62.0"
+"wrangler@npm:3.63.1":
+  version: 3.63.1
+  resolution: "wrangler@npm:3.63.1"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
@@ -6551,7 +6551,7 @@ __metadata:
     date-fns: ^3.6.0
     esbuild: 0.17.19
     fsevents: ~2.3.2
-    miniflare: 3.20240620.0
+    miniflare: 3.20240701.0
     nanoid: ^3.3.3
     path-to-regexp: ^6.2.0
     resolve: ^1.22.8
@@ -6571,7 +6571,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 08bffed46ed32a92f3e7ab52605e6431c7a3b133a69fc9274487e3f747b8c0501917dc4ad90fdd70d246b464b6fe58edb2280c8b27677b3387ea568b4b3b056b
+  checksum: 252cbbe30f519e92b0c511343996a0149facb9649bd5ff33d10601a45046e07d8075624be8784ea2f0f03b312a523635b1ecdd4b559f90492fbbee31be436744
   languageName: node
   linkType: hard
 
@@ -6619,7 +6619,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.12.0, ws@npm:^8.14.2":
+"ws@npm:^8.12.0":
   version: 8.17.1
   resolution: "ws@npm:8.17.1"
   peerDependencies:
@@ -6631,6 +6631,21 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: 442badcce1f1178ec87a0b5372ae2e9771e07c4929a3180321901f226127f252441e8689d765aa5cfba5f50ac60dd830954afc5aeae81609aefa11d3ddf5cecf
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.17.1":
+  version: 8.18.0
+  resolution: "ws@npm:8.18.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ">=5.0.2"
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 91d4d35bc99ff6df483bdf029b9ea4bfd7af1f16fc91231a96777a63d263e1eabf486e13a2353970efc534f9faa43bdbf9ee76525af22f4752cbc5ebda333975
   languageName: node
   linkType: hard
 
