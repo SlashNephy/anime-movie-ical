@@ -181,10 +181,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.1.0":
-  version: 0.1.0
-  resolution: "@cloudflare/workers-shared@npm:0.1.0"
-  checksum: fb32582e7fb3d41740e03f1aa4a84205625830f75241460d7d40b3b539cc9f858b4edb9c804c2155e3f7678a8d8a4369cb9ae4216d59203aec4699816d0aabd0
+"@cloudflare/workers-shared@npm:0.2.0":
+  version: 0.2.0
+  resolution: "@cloudflare/workers-shared@npm:0.2.0"
+  checksum: c3b950004bd58276bc28e711076acb21489c2a7984984d49204c0abb87d5a848de11c950d012a7db76c50cd57e0fa545c4c314259a5ab6463d23c5ffd680d1ff
   languageName: node
   linkType: hard
 
@@ -1654,7 +1654,7 @@ __metadata:
     ics: 3.7.6
     prettier: 3.3.3
     typescript: 5.5.4
-    wrangler: 3.70.0
+    wrangler: 3.72.0
   languageName: unknown
   linkType: soft
 
@@ -4701,9 +4701,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240806.0":
-  version: 3.20240806.0
-  resolution: "miniflare@npm:3.20240806.0"
+"miniflare@npm:3.20240806.1":
+  version: 3.20240806.1
+  resolution: "miniflare@npm:3.20240806.1"
   dependencies:
     "@cspotcode/source-map-support": 0.8.1
     acorn: ^8.8.0
@@ -4719,7 +4719,7 @@ __metadata:
     zod: ^3.22.3
   bin:
     miniflare: bootstrap.js
-  checksum: 5f6776ac44daacc2365b1dfb800f4f875e297ac1e3222432a46b4cbe770dbab8f438a9658c38fae922624bfca3d4ee8200df52759e54ad3e8b8efae5f24c7901
+  checksum: 1739f23f4ef7104d0432c58a3dc448070a8ab176f5b79a4502bda89326b98cb138dd835b794efbcdfbbaf364e4ceb044d5a3abf1060cf80ab568ac0c5d8c780a
   languageName: node
   linkType: hard
 
@@ -6544,12 +6544,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.70.0":
-  version: 3.70.0
-  resolution: "wrangler@npm:3.70.0"
+"wrangler@npm:3.72.0":
+  version: 3.72.0
+  resolution: "wrangler@npm:3.72.0"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
-    "@cloudflare/workers-shared": 0.1.0
+    "@cloudflare/workers-shared": 0.2.0
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     blake3-wasm: ^2.1.5
@@ -6557,7 +6557,7 @@ __metadata:
     date-fns: ^3.6.0
     esbuild: 0.17.19
     fsevents: ~2.3.2
-    miniflare: 3.20240806.0
+    miniflare: 3.20240806.1
     nanoid: ^3.3.3
     path-to-regexp: ^6.2.0
     resolve: ^1.22.8
@@ -6578,7 +6578,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 81decffbd013707481aaa49c5c824bd5ee129a11eb3fee7c604a27e2bf35d3f570415611f31df3baee1a0d80ddf177a7f024e15cde7fac7e7a44d19bb04039db
+  checksum: e1aa322bf44f69189c5a4083ea6264c82fa4d30deaf33fe2fd54c8e5a0bdd82d844042d6dee19e324cec7505e33b71820aed5e8a661186e0a80ff4c0c7e751fa
   languageName: node
   linkType: hard
 
