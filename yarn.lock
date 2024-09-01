@@ -181,10 +181,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@cloudflare/workers-shared@npm:0.4.0"
-  checksum: fdc79d5fb016ef47c7e98b0f9993a7b551cbb036367789810665e9e09c6495f0e8ebeb461492aabd1f66a29164a2e4890e7ae349ea10f5e0c22f7fec7fc84cc2
+"@cloudflare/workers-shared@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@cloudflare/workers-shared@npm:0.4.1"
+  checksum: b65f893d8e6f85956644f012423210ab2c10efa00c6c8d595d1b83fe06252b42574cc8abaa67cb55ca1fa49991149a939e6d13fd7f690afc430915afa3fe20d3
   languageName: node
   linkType: hard
 
@@ -1661,7 +1661,7 @@ __metadata:
     ics: 3.7.6
     prettier: 3.3.3
     typescript: 5.5.4
-    wrangler: 3.72.3
+    wrangler: 3.73.0
   languageName: unknown
   linkType: soft
 
@@ -2144,13 +2144,6 @@ __metadata:
   version: 1.0.11
   resolution: "confusing-browser-globals@npm:1.0.11"
   checksum: 3afc635abd37e566477f610e7978b15753f0e84025c25d49236f1f14d480117185516bdd40d2a2167e6bed8048641a9854964b9c067e3dcdfa6b5d0ad3c3a5ef
-  languageName: node
-  linkType: hard
-
-"consola@npm:^3.2.3":
-  version: 3.2.3
-  resolution: "consola@npm:3.2.3"
-  checksum: 32ec70e177dd2385c42e38078958cc7397be91db21af90c6f9faa0b16168b49b1c61d689338604bbb2d64370b9347a35f42a9197663a913d3a405bb0ce728499
   languageName: node
   linkType: hard
 
@@ -4953,13 +4946,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch-native@npm:^1.6.4":
-  version: 1.6.4
-  resolution: "node-fetch-native@npm:1.6.4"
-  checksum: 7b159f610e037e8813750096a6616ec6771e9abf868aa6e75e5b790bfc2ba2d92cf2abcce33c18fd01f2e5e5cc72de09c78bd4381e7f8c0887f7de21bd96f045
-  languageName: node
-  linkType: hard
-
 "node-fetch@npm:^2.6.1":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
@@ -5113,6 +5099,13 @@ __metadata:
     define-properties: ^1.2.1
     es-object-atoms: ^1.0.0
   checksum: 51fef456c2a544275cb1766897f34ded968b22adfc13ba13b5e4815fdaf4304a90d42a3aee114b1f1ede048a4890381d47a5594d84296f2767c6a0364b9da8fa
+  languageName: node
+  linkType: hard
+
+"ohash@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "ohash@npm:1.1.3"
+  checksum: 44c7321cb950ce6e87d46584fd5cc8dd3dd15fcd4ade0ac2995d0497dc6b6b1ae9bd844c59af185d63923da5cfe9b37ae37a9dbd9ac455f3ad0cdfb5a73d5ef6
   languageName: node
   linkType: hard
 
@@ -6320,7 +6313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ufo@npm:^1.5.3":
+"ufo@npm:^1.5.4":
   version: 1.5.4
   resolution: "ufo@npm:1.5.4"
   checksum: f244703b7d4f9f0df4f9af23921241ab73410b591f4e5b39c23e3147f3159b139a4b1fb5903189c306129f7a16b55995dac0008e0fbae88a37c3e58cbc34d833
@@ -6355,17 +6348,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unenv@npm:unenv-nightly@1.10.0-1717606461.a117952":
-  version: 1.10.0-1717606461.a117952
-  resolution: "unenv-nightly@npm:1.10.0-1717606461.a117952"
+"unenv@npm:unenv-nightly@2.0.0-1724863496.70db6f1":
+  version: 2.0.0-1724863496.70db6f1
+  resolution: "unenv-nightly@npm:2.0.0-1724863496.70db6f1"
   dependencies:
-    consola: ^3.2.3
     defu: ^6.1.4
-    mime: ^3.0.0
-    node-fetch-native: ^1.6.4
+    ohash: ^1.1.3
     pathe: ^1.1.2
-    ufo: ^1.5.3
-  checksum: 694e379767bce8af70e61007c3f15695a2fbe06a430762401e60726b1487616e3cdce314fa0629d4bd360eed4f70ef80b2ebdd0c540793e142a29712b937fbdd
+    ufo: ^1.5.4
+  checksum: e46f12439d431a416a5cb3cd77193900939bcbe7e2aa86652190ea5269499e99832df617d79502e0d4fad82cb1be711857237aef442a47e395af64a31a1f6815
   languageName: node
   linkType: hard
 
@@ -6576,12 +6567,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.72.3":
-  version: 3.72.3
-  resolution: "wrangler@npm:3.72.3"
+"wrangler@npm:3.73.0":
+  version: 3.73.0
+  resolution: "wrangler@npm:3.73.0"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
-    "@cloudflare/workers-shared": 0.4.0
+    "@cloudflare/workers-shared": 0.4.1
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     blake3-wasm: ^2.1.5
@@ -6596,7 +6587,7 @@ __metadata:
     resolve.exports: ^2.0.2
     selfsigned: ^2.0.1
     source-map: ^0.6.1
-    unenv: "npm:unenv-nightly@1.10.0-1717606461.a117952"
+    unenv: "npm:unenv-nightly@2.0.0-1724863496.70db6f1"
     workerd: 1.20240821.1
     xxhash-wasm: ^1.0.1
   peerDependencies:
@@ -6610,7 +6601,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 58ce5031e833aed0157d6eeda47dede7d955dd06e9599b927f553a1ea12eded10228cd2ebbf966e1d84be9c08d2ed96272858a5e4de84608d29361993459b619
+  checksum: 28f868bb758439f7c5f72a13218ba6d3be2d7e7f915c701529984136c4f3c145ac6ca9e25fdb44dff32b0e67245e91c8f18bbbf10c6cd1658f168d6754d40355
   languageName: node
   linkType: hard
 
