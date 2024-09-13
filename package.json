@@ -25,7 +25,7 @@
     "@cloudflare/workers-types": "^4.20230419.0",
     "@slashnephy/eslint-config": "2.3.111",
     "@slashnephy/prettier-config": "1.0.73",
-    "concurrently": "9.0.0",
+    "concurrently": "9.0.1",
     "eslint": "8.57.0",
     "prettier": "3.3.3",
     "typescript": "5.6.2",
