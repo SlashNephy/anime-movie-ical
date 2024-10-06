@@ -1679,7 +1679,7 @@ __metadata:
     ics: 3.8.1
     prettier: 3.3.3
     typescript: 5.6.2
-    wrangler: 3.78.12
+    wrangler: 3.80.0
   languageName: unknown
   linkType: soft
 
@@ -6584,9 +6584,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.78.12":
-  version: 3.78.12
-  resolution: "wrangler@npm:3.78.12"
+"wrangler@npm:3.80.0":
+  version: 3.80.0
+  resolution: "wrangler@npm:3.80.0"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
     "@cloudflare/workers-shared": 0.5.4
@@ -6617,7 +6617,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: b20119fba80d6e1e299220ec373d1ce72b7592cc5c3943b60846a57db6803bb10479f8aa60d0a377a73741cf6c8b4cff9df2be69234d89d25fb8c73e5789169e
+  checksum: 18b73b1ab45fd3d1c515cb7ec0c9b8f7ed3191c7fb58517bd986faa9656e2b5c9d22384e6a3452485af42a7f45687d4fca423371d39d4e26fddc4806dc12c1fa
   languageName: node
   linkType: hard
 
