@@ -1679,7 +1679,7 @@ __metadata:
     ics: 3.8.1
     prettier: 3.3.3
     typescript: 5.6.2
-    wrangler: 3.80.0
+    wrangler: 3.80.3
   languageName: unknown
   linkType: soft
 
@@ -4701,9 +4701,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240925.0":
-  version: 3.20240925.0
-  resolution: "miniflare@npm:3.20240925.0"
+"miniflare@npm:3.20240925.1":
+  version: 3.20240925.1
+  resolution: "miniflare@npm:3.20240925.1"
   dependencies:
     "@cspotcode/source-map-support": 0.8.1
     acorn: ^8.8.0
@@ -4719,7 +4719,7 @@ __metadata:
     zod: ^3.22.3
   bin:
     miniflare: bootstrap.js
-  checksum: a3375f806822e4dcd1f742698639c248bccf32027f08b32dbe7623d443f11373df33e27d60b6bea9adec94e6c58945bf3ab7ad0904dccd3ce504deb6a6968c27
+  checksum: 94daf3ffb7304c52da921c691404ea2fcd6cabfb912b104dd89635a95e046d7ed4ba81ba5c4d10cc5fa900e9524342dbdff5b74c9ab036b4a1aed9d3c9455d7f
   languageName: node
   linkType: hard
 
@@ -6309,15 +6309,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unenv@npm:unenv-nightly@2.0.0-20240919-125358-9a64854":
-  version: 2.0.0-20240919-125358-9a64854
-  resolution: "unenv-nightly@npm:2.0.0-20240919-125358-9a64854"
+"unenv@npm:unenv-nightly@2.0.0-20241009-125958-e8ea22f":
+  version: 2.0.0-20241009-125958-e8ea22f
+  resolution: "unenv-nightly@npm:2.0.0-20241009-125958-e8ea22f"
   dependencies:
     defu: ^6.1.4
     ohash: ^1.1.4
     pathe: ^1.1.2
     ufo: ^1.5.4
-  checksum: f65ca7bb9fa90512e779570b19d098c87550f7df5e09c93f0147956aaee021aee602f99bfbe991df75415a2c66d51627be9c6cd6d495aacb7987a5baa0cfb463
+  checksum: c17821aeb3b4214707c33c62874550a06db41dbc14488ecc0c63981ef09162b422dc54f6d12c945db934b68116d6aff517480894feb85102eb569f332c5fd661
   languageName: node
   linkType: hard
 
@@ -6528,9 +6528,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.80.0":
-  version: 3.80.0
-  resolution: "wrangler@npm:3.80.0"
+"wrangler@npm:3.80.3":
+  version: 3.80.3
+  resolution: "wrangler@npm:3.80.3"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
     "@cloudflare/workers-shared": 0.5.4
@@ -6540,14 +6540,14 @@ __metadata:
     chokidar: ^3.5.3
     esbuild: 0.17.19
     fsevents: ~2.3.2
-    miniflare: 3.20240925.0
+    miniflare: 3.20240925.1
     nanoid: ^3.3.3
     path-to-regexp: ^6.3.0
     resolve: ^1.22.8
     resolve.exports: ^2.0.2
     selfsigned: ^2.0.1
     source-map: ^0.6.1
-    unenv: "npm:unenv-nightly@2.0.0-20240919-125358-9a64854"
+    unenv: "npm:unenv-nightly@2.0.0-20241009-125958-e8ea22f"
     workerd: 1.20240925.0
     xxhash-wasm: ^1.0.1
   peerDependencies:
@@ -6561,7 +6561,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 18b73b1ab45fd3d1c515cb7ec0c9b8f7ed3191c7fb58517bd986faa9656e2b5c9d22384e6a3452485af42a7f45687d4fca423371d39d4e26fddc4806dc12c1fa
+  checksum: 7d8377924f502118bb4f6af845ee1529083e3f6b25f278d6c2905bb039e0720f4244d20275491f22913601844d66f33256adc215549bf23be97bd38bc2efc3b8
   languageName: node
   linkType: hard
 
