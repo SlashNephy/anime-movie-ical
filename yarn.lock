@@ -1666,7 +1666,7 @@ __metadata:
     ics: 3.8.1
     prettier: 3.3.3
     typescript: 5.6.3
-    wrangler: 3.83.0
+    wrangler: 3.84.1
   languageName: unknown
   linkType: soft
 
@@ -6200,15 +6200,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unenv@npm:unenv-nightly@2.0.0-20241018-011344-e666fcf":
-  version: 2.0.0-20241018-011344-e666fcf
-  resolution: "unenv-nightly@npm:2.0.0-20241018-011344-e666fcf"
+"unenv@npm:unenv-nightly@2.0.0-20241024-111401-d4156ac":
+  version: 2.0.0-20241024-111401-d4156ac
+  resolution: "unenv-nightly@npm:2.0.0-20241024-111401-d4156ac"
   dependencies:
     defu: ^6.1.4
     ohash: ^1.1.4
     pathe: ^1.1.2
     ufo: ^1.5.4
-  checksum: 384d65ecc1cb80e822a103062fab6bd7b10962d3aa5f66e78496aacfcdbe422e641779f5b6e83a4c65e1c4f507bcadbc87c253ccc8f6144c441827132f5a48d0
+  checksum: 57ceabd99ae22cfa1ec0cc87f9e1c0b835c33df98b6332fbd97c5e3e909fa8e12b9b18198e7c7cc821f1e70139f12821f6d8873d3e82a909b0fa32237215b7cc
   languageName: node
   linkType: hard
 
@@ -6419,9 +6419,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.83.0":
-  version: 3.83.0
-  resolution: "wrangler@npm:3.83.0"
+"wrangler@npm:3.84.1":
+  version: 3.84.1
+  resolution: "wrangler@npm:3.84.1"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
     "@cloudflare/workers-shared": 0.7.0
@@ -6440,7 +6440,7 @@ __metadata:
     resolve.exports: ^2.0.2
     selfsigned: ^2.0.1
     source-map: ^0.6.1
-    unenv: "npm:unenv-nightly@2.0.0-20241018-011344-e666fcf"
+    unenv: "npm:unenv-nightly@2.0.0-20241024-111401-d4156ac"
     workerd: 1.20241022.0
     xxhash-wasm: ^1.0.1
   peerDependencies:
@@ -6454,7 +6454,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 12e9a3493e8e93669bdc372ed96af54f6cd5b274c7e36ad2b845a1f63e236d5480cb0ed1fa805d6a2effd9c6ec01c97d020c881121a68055c27b55bc401a60c2
+  checksum: 40402fc05082aa9b3ff860365161831b8b389631061fa24d17911c66f71484bd7dd08db2b2bb53858f1e848490386762fb1fd949aeea7edb3046a804bb9e1e2d
   languageName: node
   linkType: hard
 
