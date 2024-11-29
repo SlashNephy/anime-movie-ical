@@ -170,13 +170,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.8.0":
-  version: 0.8.0
-  resolution: "@cloudflare/workers-shared@npm:0.8.0"
+"@cloudflare/workers-shared@npm:0.9.0":
+  version: 0.9.0
+  resolution: "@cloudflare/workers-shared@npm:0.9.0"
   dependencies:
     mime: ^3.0.0
     zod: ^3.22.3
-  checksum: 895efc05905e342f87723212756d16e07003b76317afa75534334f229baf7b6f37373f76148312d2653ec827bbbecb65408a666ef2aa377b9824031406c2a1ab
+  checksum: 208327a2e3cfbce03d563aecb009c9c4a43d3101b325714936bf9787f756f9cfc26197c44a024c01c0665e1e294f1a65c627442300edac07416e770cba5ee8fe
   languageName: node
   linkType: hard
 
@@ -1671,7 +1671,7 @@ __metadata:
     ics: 3.8.1
     prettier: 3.4.1
     typescript: 5.7.2
-    wrangler: 3.90.0
+    wrangler: 3.91.0
   languageName: unknown
   linkType: soft
 
@@ -6156,15 +6156,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unenv@npm:unenv-nightly@2.0.0-20241111-080453-894aa31":
-  version: 2.0.0-20241111-080453-894aa31
-  resolution: "unenv-nightly@npm:2.0.0-20241111-080453-894aa31"
+"unenv@npm:unenv-nightly@2.0.0-20241121-161142-806b5c0":
+  version: 2.0.0-20241121-161142-806b5c0
+  resolution: "unenv-nightly@npm:2.0.0-20241121-161142-806b5c0"
   dependencies:
     defu: ^6.1.4
     ohash: ^1.1.4
     pathe: ^1.1.2
     ufo: ^1.5.4
-  checksum: d234c631d9a5a633c1e811ba8bf63fcdc8cbd533a811730993f8485907b34b83eb614796606b38e2b99f1a40e6ba1268bd01b498acfa876233a7d4dd6d27f968
+  checksum: 187d81990b1e58a2a73b5c422c51c1a93ef597f2d781032086f9ce338b69b508446463dc36f9b3e4387aba1473ed7faeec20edcc54786d8cb7bd880253ca3c89
   languageName: node
   linkType: hard
 
@@ -6376,12 +6376,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.90.0":
-  version: 3.90.0
-  resolution: "wrangler@npm:3.90.0"
+"wrangler@npm:3.91.0":
+  version: 3.91.0
+  resolution: "wrangler@npm:3.91.0"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
-    "@cloudflare/workers-shared": 0.8.0
+    "@cloudflare/workers-shared": 0.9.0
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     blake3-wasm: ^2.1.5
@@ -6397,7 +6397,7 @@ __metadata:
     resolve.exports: ^2.0.2
     selfsigned: ^2.0.1
     source-map: ^0.6.1
-    unenv: "npm:unenv-nightly@2.0.0-20241111-080453-894aa31"
+    unenv: "npm:unenv-nightly@2.0.0-20241121-161142-806b5c0"
     workerd: 1.20241106.1
     xxhash-wasm: ^1.0.1
   peerDependencies:
@@ -6411,7 +6411,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: bdb0c8fb5c5c2ff1a9a1e84e7d11f4baaa8d3ced6e1d0dcedb4c8354dacb87718de441289ed19b5f223500f683b9edee058cab29a4975d2a7418992082c88a1b
+  checksum: 0d4abefefa8934e67283245c43658bbada18d80ab9a54a86a79722d6e79abd78a247de3bd5eb9c7abfffa99d39eff8df391c38444d8c7a282460b4d1ecc91450
   languageName: node
   linkType: hard
 
