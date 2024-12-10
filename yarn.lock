@@ -170,13 +170,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.10.0":
-  version: 0.10.0
-  resolution: "@cloudflare/workers-shared@npm:0.10.0"
+"@cloudflare/workers-shared@npm:0.11.0":
+  version: 0.11.0
+  resolution: "@cloudflare/workers-shared@npm:0.11.0"
   dependencies:
     mime: ^3.0.0
     zod: ^3.22.3
-  checksum: dadc79899bd224d0aff6d8740242b98252f628aa09e5e932557248ff8ce14a7088b6a5bd7022e35c42bfc24f131adbd3189ef8599a19156d7ef2f4f872668d26
+  checksum: e1c6269e4cd9272a9bcfa3ba5fb35b14df674cdce9f5454bd99bbbb4d1cf6a30d50b9f7d597419498eab9e14d70ada8605bd229917829c0c79bec55667498ec4
   languageName: node
   linkType: hard
 
@@ -1728,7 +1728,7 @@ __metadata:
     ics: 3.8.1
     prettier: 3.4.2
     typescript: 5.7.2
-    wrangler: 3.93.0
+    wrangler: 3.95.0
   languageName: unknown
   linkType: soft
 
@@ -6425,12 +6425,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.93.0":
-  version: 3.93.0
-  resolution: "wrangler@npm:3.93.0"
+"wrangler@npm:3.95.0":
+  version: 3.95.0
+  resolution: "wrangler@npm:3.95.0"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
-    "@cloudflare/workers-shared": 0.10.0
+    "@cloudflare/workers-shared": 0.11.0
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     blake3-wasm: ^2.1.5
@@ -6459,7 +6459,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 95a41ed229b07e57e0268dc8b075a523ea276ef29346deb21fec603a46b6e76d7899f74e4c9f2ecd1e404b3e8595fd309363223f806f98b02649efb0f80c5aad
+  checksum: 44e43c1e37ef75bf8cc50be7472ff425dffb20044fdf2bc025b74833af13d81af22b6f3eec8d67e91826f6efeb9d2389ad546705f7393e87f62b0b8bdfb83342
   languageName: node
   linkType: hard
 
