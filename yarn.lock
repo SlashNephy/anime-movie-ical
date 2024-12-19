@@ -170,16 +170,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.11.0":
-  version: 0.11.0
-  resolution: "@cloudflare/workers-shared@npm:0.11.0"
-  dependencies:
-    mime: ^3.0.0
-    zod: ^3.22.3
-  checksum: e1c6269e4cd9272a9bcfa3ba5fb35b14df674cdce9f5454bd99bbbb4d1cf6a30d50b9f7d597419498eab9e14d70ada8605bd229917829c0c79bec55667498ec4
-  languageName: node
-  linkType: hard
-
 "@cloudflare/workers-types@npm:^4.20230419.0":
   version: 4.20241205.0
   resolution: "@cloudflare/workers-types@npm:4.20241205.0"
@@ -1536,7 +1526,7 @@ __metadata:
     ics: 3.8.1
     prettier: 3.4.2
     typescript: 5.7.2
-    wrangler: 3.95.0
+    wrangler: 3.98.0
   languageName: unknown
   linkType: soft
 
@@ -6288,12 +6278,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.95.0":
-  version: 3.95.0
-  resolution: "wrangler@npm:3.95.0"
+"wrangler@npm:3.98.0":
+  version: 3.98.0
+  resolution: "wrangler@npm:3.98.0"
   dependencies:
     "@cloudflare/kv-asset-handler": 0.3.4
-    "@cloudflare/workers-shared": 0.11.0
     "@esbuild-plugins/node-globals-polyfill": ^0.2.3
     "@esbuild-plugins/node-modules-polyfill": ^0.2.2
     blake3-wasm: ^2.1.5
@@ -6322,7 +6311,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 44e43c1e37ef75bf8cc50be7472ff425dffb20044fdf2bc025b74833af13d81af22b6f3eec8d67e91826f6efeb9d2389ad546705f7393e87f62b0b8bdfb83342
+  checksum: 11dac6606e0019f6605d38606f6886cf47ac5b84f03a6d41e2876a42086d159f23a8b3adce5522a5fb698547ef9dc691b56a2a7ced50eece519dd8c4395d5652
   languageName: node
   linkType: hard
 
