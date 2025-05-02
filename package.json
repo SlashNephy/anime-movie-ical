@@ -29,7 +29,7 @@
     "eslint": "8.57.1",
     "prettier": "3.5.3",
     "typescript": "5.8.3",
-    "wrangler": "4.13.2"
+    "wrangler": "4.14.1"
   },
   "packageManager": "yarn@3.8.7",
   "eslintConfig": {
