@@ -189,9 +189,9 @@ __metadata:
   linkType: hard
 
 "@cloudflare/workers-types@npm:^4.20230419.0":
-  version: 4.20250831.0
-  resolution: "@cloudflare/workers-types@npm:4.20250831.0"
-  checksum: c22e6d4705280aceb9e83414f976efef7294d06542e40841add190cdda6962660c08d5cf13b7de42ebd4fe70bc56f1010dc6d32776d31bec5042f62f424cff55
+  version: 4.20250906.0
+  resolution: "@cloudflare/workers-types@npm:4.20250906.0"
+  checksum: 4f69bfd9eae1e7582ec9aa913b8b197d61c34874ce2c55b8e5075aa30779376b44d91a65ca51a7b3dd9bec225da5ba6839ac08053d44f0d3b62139b12ce983ea
   languageName: node
   linkType: hard
 
