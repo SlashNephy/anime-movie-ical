@@ -31,7 +31,7 @@
     "typescript": "5.9.3",
     "wrangler": "4.43.0"
   },
-  "packageManager": "yarn@3.8.7",
+  "packageManager": "yarn@4.10.3",
   "eslintConfig": {
     "extends": "@slashnephy/eslint-config"
   }
