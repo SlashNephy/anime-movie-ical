@@ -17,7 +17,7 @@
     "lint:prettier": "prettier --check ."
   },
   "dependencies": {
-    "date-fns": "2.30.0",
+    "date-fns": "4.1.0",
     "http-status-codes": "2.3.0",
     "ics": "3.8.1"
   },
