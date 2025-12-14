@@ -9,12 +9,8 @@
     "build": "tsc",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
-    "format": "concurrently -n format: -m 1 'yarn:format:*'",
-    "format:eslint": "yarn lint:eslint --fix",
-    "format:prettier": "yarn lint:prettier --write",
-    "lint": "concurrently -n lint: 'yarn:lint:*'",
-    "lint:eslint": "eslint .",
-    "lint:prettier": "prettier --check ."
+    "format": "eslint --fix .",
+    "lint": "eslint ."
   },
   "dependencies": {
     "date-fns": "4.1.0",
@@ -23,16 +19,10 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230419.0",
-    "@slashnephy/eslint-config": "2.3.204",
-    "@slashnephy/prettier-config": "1.0.73",
-    "concurrently": "9.2.1",
-    "eslint": "8.57.1",
-    "prettier": "3.7.4",
+    "@slashnephy/eslint-config": "3.0.116",
+    "eslint": "9.39.2",
     "typescript": "5.9.3",
     "wrangler": "4.53.0"
   },
-  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
-  "eslintConfig": {
-    "extends": "@slashnephy/eslint-config"
-  }
+  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501"
 }
