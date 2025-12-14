@@ -2,9 +2,13 @@
   "name": "anime-movie-ical",
   "version": "0.0.0",
   "private": true,
-  "author": "SlashNephy <spica@starry.blue> (https://spica.starry.blue/)",
-  "repository": "https://github.com/SlashNephy/anime-movie-ical",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SlashNephy/anime-movie-ical"
+  },
   "license": "MIT",
+  "author": "SlashNephy <spica@starry.blue> (https://spica.starry.blue/)",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "deploy": "wrangler deploy",

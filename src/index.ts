@@ -4,9 +4,9 @@ import { StatusCodes } from 'http-status-codes'
 import { fetchPaginatedAniListMedia } from '../lib/anilist.ts'
 
 import type { AniListMedia } from '../lib/anilist.ts'
-import type { EventAttributes, DateArray } from 'ics'
+import type { EventAttributes } from 'ics'
 
-// eslint-disable-next-line import/no-default-export
+// eslint-disable-next-line import-x/no-default-export
 export default {
   async fetch(): Promise<Response> {
     const media = await fetchPaginatedAniListMedia()
@@ -41,9 +41,9 @@ function convertEvent(media: AniListMedia): EventAttributes | null {
     new Date(
       media.startDate.year,
       media.startDate.month - 1,
-      media.startDate.day
+      media.startDate.day,
     ),
-    -9 // JST 0時の終日イベントにしたいので、時差の分引いておく
+    -9, // JST 0時の終日イベントにしたいので、時差の分引いておく
   )
   const end = addDays(start, 1)
 
@@ -61,7 +61,7 @@ function convertEvent(media: AniListMedia): EventAttributes | null {
       start.getMonth() + 1,
       start.getDate(),
       start.getHours(),
-    ] as const as DateArray,
+    ],
     startInputType: 'utc',
     startOutputType: 'utc',
     end: [
@@ -69,7 +69,7 @@ function convertEvent(media: AniListMedia): EventAttributes | null {
       end.getMonth() + 1,
       end.getDate(),
       end.getHours(),
-    ] as const as DateArray,
+    ],
     endInputType: 'utc',
     endOutputType: 'utc',
     calName: 'アニメ映画 公開予定 (anime-movie-ical)',
