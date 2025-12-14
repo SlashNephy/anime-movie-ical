@@ -17,6 +17,9 @@ importers:
       ics:
         specifier: 3.8.1
         version: 3.8.1
+      zod:
+        specifier: 4.1.13
+        version: 4.1.13
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20251213.0
