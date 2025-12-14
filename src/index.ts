@@ -9,6 +9,13 @@ import type { EventAttributes } from 'ics'
 // eslint-disable-next-line import-x/no-default-export
 export default {
   async fetch(request: Request): Promise<Response> {
+    const url = new URL(request.url)
+    if (url.pathname !== '/') {
+      return new Response(null, {
+        status: StatusCodes.NOT_FOUND,
+      })
+    }
+
     const media = await fetchPaginatedAniListMediaWithCache(request)
     const events = media
       .map(convertEvent)
