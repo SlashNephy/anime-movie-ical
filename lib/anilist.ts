@@ -1,3 +1,5 @@
+import { hoursToSeconds } from 'date-fns'
+
 export type AniListMediaResponse = {
   data: AniListMediaData | null
 }
@@ -29,6 +31,17 @@ export type AniListMedia = {
 }
 
 async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
+  // Cache API から利用可能なキャッシュを確認
+  const cache = caches.default
+  const cacheKey = `anilist-page-${page}`
+  const cachedResponse = await cache.match(cacheKey)
+  if (cachedResponse) {
+    const json: AniListMediaResponse = await cachedResponse.json()
+    if (json.data) {
+      return json.data
+    }
+  }
+
   const response = await fetch('https://graphql.anilist.co', {
     method: 'POST',
     headers: {
@@ -73,6 +86,15 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
   if (!json.data) {
     throw new Error(`No data returned from AniList: page=${page}`)
   }
+
+  // レスポンスをキャッシュに保存
+  const responseToCache = new Response(JSON.stringify(json), {
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': `max-age=${hoursToSeconds(24)}`,
+    },
+  })
+  await cache.put(cacheKey, responseToCache)
 
   return json.data
 }
