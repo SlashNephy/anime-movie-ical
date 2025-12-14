@@ -21,9 +21,9 @@ export async function loadCache<S extends z.ZodType>(key: string, schema: S): Pr
   return null
 }
 
-export async function savePublicCache<S extends z.ZodType>(
+export async function savePublicCache<S extends z.ZodType, T extends z.infer<S>>(
   key: string,
-  data: z.infer<S>,
+  data: T,
   schema: S,
   maxAgeSeconds: number,
 ): Promise<void> {

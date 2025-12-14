@@ -1,7 +1,4 @@
-import { hoursToSeconds } from 'date-fns'
 import { z } from 'zod'
-
-import { loadCache, savePublicCache } from './cache.ts'
 
 const AniListMediaSchema = z.object({
   id: z.number(),
@@ -21,6 +18,8 @@ const AniListMediaSchema = z.object({
     }),
   ),
 })
+
+export const AniListMediaArraySchema = z.array(AniListMediaSchema)
 
 const AniListMediaDataSchema = z.object({
   Page: z.object({
@@ -91,24 +90,11 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
   return validatedResponse.data.data
 }
 
-async function fetchAniListMediaWithCache(page: number): Promise<AniListMediaData> {
-  const cacheKey = `https://anime-movie-ical.starrybluesky.workers.dev/anilist/${page}`
-  const cached = await loadCache(cacheKey, AniListMediaDataSchema)
-  if (cached) {
-    return cached
-  }
-
-  const data = await fetchAniListMedia(page)
-  await savePublicCache(cacheKey, data, AniListMediaDataSchema, hoursToSeconds(24))
-
-  return data
-}
-
 export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
   const media: AniListMedia[] = []
   for (let page = 1; ; page++) {
     // eslint-disable-next-line no-await-in-loop
-    const { Page } = await fetchAniListMediaWithCache(page)
+    const { Page } = await fetchAniListMedia(page)
 
     media.push(...Page.media)
 
