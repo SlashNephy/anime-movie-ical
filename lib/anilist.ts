@@ -106,9 +106,7 @@ async function fetchAniListMediaWithCache(page: number): Promise<AniListMediaDat
 
 export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
   const media: AniListMedia[] = []
-  let page = 1
-
-  while (true) {
+  for (let page = 1; ; page++) {
     // eslint-disable-next-line no-await-in-loop
     const { Page } = await fetchAniListMediaWithCache(page)
 
@@ -117,7 +115,6 @@ export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
     if (!Page.pageInfo.hasNextPage) {
       break
     }
-    page++
   }
 
   return media
