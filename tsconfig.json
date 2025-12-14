@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2021",
-    "lib": ["es2021"],
-    "jsx": "react",
-    "module": "es2022",
-    "moduleResolution": "node",
-    "types": ["@cloudflare/workers-types"],
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": [
+      "@cloudflare/workers-types"
+    ],
     "resolveJsonModule": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -15,6 +18,10 @@
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,
     "useUnknownInCatchVariables": true,
-    "allowImportingTsExtensions": true
-  }
+    "allowImportingTsExtensions": true,
+  },
+  "include": [
+    "src",
+    "lib"
+  ]
 }
