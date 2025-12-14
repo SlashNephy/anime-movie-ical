@@ -29,10 +29,13 @@ export async function savePublicCache<S extends z.ZodType>(
   maxAgeSeconds: number,
 ): Promise<void> {
   const validatedData = await schema.safeParseAsync(data)
+  if (!validatedData.success) {
+    return
+  }
 
   // キャッシュに保存
   const cache = caches.default
-  const response = new Response(JSON.stringify(validatedData), {
+  const response = new Response(JSON.stringify(validatedData.data), {
     headers: {
       'Content-Type': 'application/json',
       'Cache-Control': `public, max-age=${maxAgeSeconds}`,
