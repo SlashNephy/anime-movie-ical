@@ -91,7 +91,7 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
   const responseToCache = new Response(JSON.stringify(json), {
     headers: {
       'Content-Type': 'application/json',
-      'Cache-Control': `max-age=${hoursToSeconds(24)}`,
+      'Cache-Control': `public, max-age=${hoursToSeconds(24)}`,
     },
   })
   await cache.put(cacheKey, responseToCache)
