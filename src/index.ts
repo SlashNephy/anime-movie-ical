@@ -1,15 +1,15 @@
-import { addDays, addHours } from 'date-fns'
+import { addDays, addHours, hoursToSeconds } from 'date-fns'
 import { StatusCodes } from 'http-status-codes'
 
-import { fetchPaginatedAniListMedia } from '../lib/anilist.ts'
+import { AniListMediaArraySchema, fetchPaginatedAniListMedia, type AniListMedia } from '../lib/anilist.ts'
+import { loadCache, savePublicCache } from '../lib/cache.ts'
 
-import type { AniListMedia } from '../lib/anilist.ts'
 import type { EventAttributes } from 'ics'
 
 // eslint-disable-next-line import-x/no-default-export
 export default {
-  async fetch(): Promise<Response> {
-    const media = await fetchPaginatedAniListMedia()
+  async fetch(request: Request): Promise<Response> {
+    const media = await fetchPaginatedAniListMediaWithCache(request)
     const events = media
       .map(convertEvent)
       .filter((event): event is NonNullable<typeof event> => !!event)
@@ -32,6 +32,19 @@ export default {
   },
 }
 
+async function fetchPaginatedAniListMediaWithCache(request: Request): Promise<AniListMedia[]> {
+  const cacheKey = new URL('/media', request.url).toString()
+  const cached = await loadCache(cacheKey, AniListMediaArraySchema)
+  if (cached) {
+    return cached
+  }
+
+  const data = await fetchPaginatedAniListMedia()
+  await savePublicCache(cacheKey, data, AniListMediaArraySchema, hoursToSeconds(24))
+
+  return data
+}
+
 function convertEvent(media: AniListMedia): EventAttributes | null {
   if (!media.startDate.year || !media.startDate.month || !media.startDate.day) {
     return null
@@ -49,7 +62,7 @@ function convertEvent(media: AniListMedia): EventAttributes | null {
 
   return {
     uid: media.id.toString(),
-    title: media.title.native,
+    title: media.title.native ?? undefined,
     description: [
       ...media.externalLinks
         .filter((link) => link.type === 'INFO')
