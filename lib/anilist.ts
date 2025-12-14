@@ -1,10 +1,12 @@
 export type AniListMediaResponse = {
-  data: {
-    Page: {
-      media: AniListMedia[]
-      pageInfo: {
-        hasNextPage: boolean
-      }
+  data: AniListMediaData | null
+}
+
+export type AniListMediaData = {
+  Page: {
+    media: AniListMedia[]
+    pageInfo: {
+      hasNextPage: boolean
     }
   }
 }
@@ -26,7 +28,7 @@ export type AniListMedia = {
   }[]
 }
 
-async function fetchAniListMedia(page: number): Promise<AniListMediaResponse> {
+async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
   const response = await fetch('https://graphql.anilist.co', {
     method: 'POST',
     headers: {
@@ -63,8 +65,16 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaResponse> {
       },
     }),
   })
+  if (!response.ok) {
+    throw new Error(`Failed to fetch AniList media: page=${page}, ${response.statusText}`)
+  }
 
-  return await response.json()
+  const json: AniListMediaResponse = await response.json()
+  if (!json.data) {
+    throw new Error(`No data returned from AniList: page=${page}`)
+  }
+
+  return json.data
 }
 
 export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
@@ -73,11 +83,11 @@ export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
 
   while (true) {
     // eslint-disable-next-line no-await-in-loop
-    const { data } = await fetchAniListMedia(page)
+    const { Page } = await fetchAniListMedia(page)
 
-    media.push(...data.Page.media)
+    media.push(...Page.media)
 
-    if (!data.Page.pageInfo.hasNextPage) {
+    if (!Page.pageInfo.hasNextPage) {
       break
     }
     page++
