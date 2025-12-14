@@ -49,7 +49,7 @@ function convertEvent(media: AniListMedia): EventAttributes | null {
 
   return {
     uid: media.id.toString(),
-    title: media.title.native,
+    title: media.title.native ?? undefined,
     description: [
       ...media.externalLinks
         .filter((link) => link.type === 'INFO')

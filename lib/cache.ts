@@ -1,5 +1,4 @@
-// eslint-disable-next-line import-x/no-named-as-default
-import type z from 'zod'
+import type { z } from 'zod'
 
 /**
  * Cache API から利用可能なキャッシュを確認
@@ -9,14 +8,14 @@ export async function loadCache<S extends z.ZodType>(key: string, schema: S): Pr
   const cache = caches.default
   const response = await cache.match(key)
   if (response) {
-    const json = await response.json()
-    const validatedResponse = await schema.safeParseAsync(json)
-    if (validatedResponse.success) {
-      return validatedResponse.data
-    }
+    try {
+      const json = await response.json()
 
-    // キャッシュデータが不正な場合は、キャッシュを削除
-    await cache.delete(key)
+      return await schema.parseAsync(json)
+    } catch {
+      // キャッシュデータが不正な場合は、キャッシュを削除
+      await cache.delete(key)
+    }
   }
 
   return null

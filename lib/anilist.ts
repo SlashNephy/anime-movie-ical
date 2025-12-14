@@ -7,12 +7,12 @@ const AniListMediaSchema = z.object({
   id: z.number(),
   siteUrl: z.string(),
   startDate: z.object({
-    year: z.number().optional(),
-    month: z.number().optional(),
-    day: z.number().optional(),
+    year: z.number().nullish(),
+    month: z.number().nullish(),
+    day: z.number().nullish(),
   }),
   title: z.object({
-    native: z.string().optional(),
+    native: z.string().nullish(),
   }),
   externalLinks: z.array(
     z.object({
@@ -32,7 +32,7 @@ const AniListMediaDataSchema = z.object({
 })
 
 const AniListMediaResponseSchema = z.object({
-  data: AniListMediaDataSchema.nullable(),
+  data: AniListMediaDataSchema.nullish(),
 })
 
 export type AniListMediaData = z.infer<typeof AniListMediaDataSchema>
@@ -76,16 +76,16 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
     }),
   })
   if (!response.ok) {
-    throw new Error(`Failed to fetch AniList media: page=${page}, ${response.statusText}`)
+    throw new Error(`Failed to fetch AniList media (page=${page}): ${response.statusText}`)
   }
 
   const json = await response.json()
   const validatedResponse = AniListMediaResponseSchema.safeParse(json)
   if (!validatedResponse.success) {
-    throw new Error(`Invalid response from AniList: page=${page}, ${validatedResponse.error.message}`)
+    throw new Error(`Invalid response from AniList (page=${page}): ${JSON.stringify(z.flattenError(validatedResponse.error))}`)
   }
   if (!validatedResponse.data.data) {
-    throw new Error(`No data returned from AniList: page=${page}`)
+    throw new Error(`No data returned from AniList (page=${page})`)
   }
 
   return validatedResponse.data.data
