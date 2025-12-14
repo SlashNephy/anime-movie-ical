@@ -1,6 +1,8 @@
 import { hoursToSeconds } from 'date-fns'
 import { z } from 'zod'
 
+import { loadCache, savePublicCache } from './cache.ts'
+
 const AniListMediaSchema = z.object({
   id: z.number(),
   siteUrl: z.string(),
@@ -37,22 +39,6 @@ export type AniListMediaData = z.infer<typeof AniListMediaDataSchema>
 export type AniListMedia = z.infer<typeof AniListMediaSchema>
 
 async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
-  // Cache API から利用可能なキャッシュを確認
-  // https://developers.cloudflare.com/workers/runtime-apis/cache/
-  const cache = caches.default
-  const cacheKey = `https://anime-movie-ical.starrybluesky.workers.dev/anilist/${page}`
-  const cachedResponse = await cache.match(cacheKey)
-  if (cachedResponse) {
-    const json = await cachedResponse.json()
-    const validatedResponse = AniListMediaResponseSchema.safeParse(json)
-    if (validatedResponse.success && validatedResponse.data.data) {
-      return validatedResponse.data.data
-    }
-
-    // キャッシュデータが不正な場合は、キャッシュを削除して API から取得し直す
-    await cache.delete(cacheKey)
-  }
-
   const response = await fetch('https://graphql.anilist.co', {
     method: 'POST',
     headers: {
@@ -98,21 +84,24 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
   if (!validatedResponse.success) {
     throw new Error(`Invalid response from AniList: page=${page}, ${validatedResponse.error.message}`)
   }
-
   if (!validatedResponse.data.data) {
     throw new Error(`No data returned from AniList: page=${page}`)
   }
 
-  // レスポンスをキャッシュに保存
-  const responseToCache = new Response(JSON.stringify(validatedResponse.data), {
-    headers: {
-      'Content-Type': 'application/json',
-      'Cache-Control': `public, max-age=${hoursToSeconds(24)}`,
-    },
-  })
-  await cache.put(cacheKey, responseToCache)
-
   return validatedResponse.data.data
+}
+
+async function fetchAniListMediaWithCache(page: number): Promise<AniListMediaData> {
+  const cacheKey = `https://anime-movie-ical.starrybluesky.workers.dev/anilist/${page}`
+  const cached = await loadCache(cacheKey, AniListMediaDataSchema)
+  if (cached) {
+    return cached
+  }
+
+  const data = await fetchAniListMedia(page)
+  await savePublicCache(cacheKey, data, AniListMediaDataSchema, hoursToSeconds(24))
+
+  return data
 }
 
 export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
@@ -121,7 +110,7 @@ export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
 
   while (true) {
     // eslint-disable-next-line no-await-in-loop
-    const { Page } = await fetchAniListMedia(page)
+    const { Page } = await fetchAniListMediaWithCache(page)
 
     media.push(...Page.media)
 
