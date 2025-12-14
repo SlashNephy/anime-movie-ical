@@ -71,7 +71,6 @@ export async function fetchPaginatedAniListMedia(): Promise<AniListMedia[]> {
   const media: AniListMedia[] = []
   let page = 1
 
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   while (true) {
     // eslint-disable-next-line no-await-in-loop
     const { data } = await fetchAniListMedia(page)
