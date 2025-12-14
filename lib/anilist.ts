@@ -74,6 +74,8 @@ async function fetchAniListMedia(page: number): Promise<AniListMediaData> {
       },
     }),
   })
+  console.log(JSON.stringify(response))
+
   if (!response.ok) {
     throw new Error(`Failed to fetch AniList media (page=${page}): ${response.statusText}`)
   }
