@@ -15,8 +15,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       ics:
-        specifier: 3.9.1
-        version: 3.9.1
+        specifier: 3.10.0
+        version: 3.10.0
       zod:
         specifier: 4.3.6
         version: 4.3.6
@@ -2157,8 +2157,8 @@ packages:
   http-status-codes@2.3.0:
     resolution: {integrity: sha512-RJ8XvFvpPM/Dmc5SV+dC4y5PCeOhT3x1Hq0NU3rjGeg5a/CqlhZ7uudknPwZFz4aeAXDcbAyaeP7GAo9lvngtA==}
 
-  ics@3.9.1:
-    resolution: {integrity: sha512-wanjdE/xKJJOkIujddNzxzI4R3V5vKKCgonzid30dDr1tJG4/nciCq82I5rgVAGzcHu+osQakTOA44jwG8RV7w==}
+  ics@3.10.0:
+    resolution: {integrity: sha512-ijPil1Zz1iCWvAhy0fYIDE/ayCcGm54XBitvSyAMjhCCuDD8N9QZd1qy3f58h2ExBGw84Yp7pTRleA/rIULkGA==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -5499,7 +5499,7 @@ snapshots:
 
   http-status-codes@2.3.0: {}
 
-  ics@3.9.1:
+  ics@3.10.0:
     dependencies:
       nanoid: 3.3.11
       runes2: 1.1.4
