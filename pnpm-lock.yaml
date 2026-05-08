@@ -25,8 +25,8 @@ importers:
         specifier: 4.20260504.1
         version: 4.20260504.1
       '@slashnephy/eslint-config':
-        specifier: 3.0.333
-        version: 3.0.333(@types/estree@1.0.8)(@types/node@25.6.0)(@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.3.6(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
+        specifier: 3.0.334
+        version: 3.0.334(@types/estree@1.0.8)(@types/node@25.6.0)(@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.3.6(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       eslint:
         specifier: 9.39.4
         version: 9.39.4(jiti@2.6.1)
@@ -1009,8 +1009,8 @@ packages:
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
     engines: {node: '>=18'}
 
-  '@slashnephy/eslint-config@3.0.333':
-    resolution: {integrity: sha512-D7MHA67nZh95wUXJBg/xFuwDfA0yhePXCHuaX5qStJvxAiX6IASNx/UaHlq1ZGzqUGneGKBH3pVvNekNaWhVpw==}
+  '@slashnephy/eslint-config@3.0.334':
+    resolution: {integrity: sha512-SlfNFQi/GLIBL1h0CWn2uROpx6rjrggiTQQLEXQs+r3SzN7aYT3hRrNE08U8tRGSqu3hp1xsKdKPb5ekkQoDAA==}
     engines: {node: '>= 24'}
     peerDependencies:
       eslint: ^9
@@ -2138,8 +2138,8 @@ packages:
     resolution: {integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==}
     engines: {node: '>=18'}
 
-  globals@17.5.0:
-    resolution: {integrity: sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==}
+  globals@17.6.0:
+    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -4171,7 +4171,7 @@ snapshots:
 
   '@sindresorhus/is@7.2.0': {}
 
-  '@slashnephy/eslint-config@3.0.333(@types/estree@1.0.8)(@types/node@25.6.0)(@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.3.6(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))':
+  '@slashnephy/eslint-config@3.0.334(@types/estree@1.0.8)(@types/node@25.6.0)(@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(@typescript-eslint/parser@8.59.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3))(eslint@9.39.4(jiti@2.6.1))(storybook@10.3.6(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.7.1(eslint@9.39.4(jiti@2.6.1))
       '@eslint-react/eslint-plugin': 2.13.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3)
@@ -4203,7 +4203,7 @@ snapshots:
       eslint-plugin-userscripts: 0.5.6(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-xss: 0.1.12
       eslint-plugin-yml: 3.3.2(eslint@9.39.4(jiti@2.6.1))
-      globals: 17.5.0
+      globals: 17.6.0
       graphql: 16.13.2
       jsonc-eslint-parser: 3.1.0
       typescript: 6.0.3
@@ -5667,7 +5667,7 @@ snapshots:
 
   globals@15.15.0: {}
 
-  globals@17.5.0: {}
+  globals@17.6.0: {}
 
   globalthis@1.0.4:
     dependencies:
