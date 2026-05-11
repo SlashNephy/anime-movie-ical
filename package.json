@@ -23,7 +23,7 @@
     "zod": "4.4.3"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20260507.1",
+    "@cloudflare/workers-types": "4.20260508.1",
     "@slashnephy/eslint-config": "3.0.336",
     "eslint": "9.39.4",
     "typescript": "6.0.3",
