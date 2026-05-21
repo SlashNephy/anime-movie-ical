@@ -25,8 +25,8 @@ importers:
         specifier: 4.20260517.1
         version: 4.20260517.1
       '@slashnephy/eslint-config':
-        specifier: 3.0.353
-        version: 3.0.353(@types/estree@1.0.9)(@types/node@25.8.0)(@typescript-eslint/eslint-plugin@8.59.3(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(storybook@10.4.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@testing-library/dom@10.4.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(ts-declaration-location@1.0.7(typescript@6.0.3))
+        specifier: 3.0.355
+        version: 3.0.355(@types/estree@1.0.9)(@types/node@25.8.0)(@typescript-eslint/eslint-plugin@8.59.3(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(storybook@10.4.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@testing-library/dom@10.4.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(ts-declaration-location@1.0.7(typescript@6.0.3))
       eslint:
         specifier: 9.39.4
         version: 9.39.4(jiti@2.7.0)
@@ -1259,8 +1259,8 @@ packages:
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
     engines: {node: '>=18'}
 
-  '@slashnephy/eslint-config@3.0.353':
-    resolution: {integrity: sha512-hAja73wPs7kTLc1WksN/fFWghMBia3f57KoooCj/Gis4Qt/osgHKFfaP34cyJLRNYBq0uGSMz85882JOX4YarA==}
+  '@slashnephy/eslint-config@3.0.355':
+    resolution: {integrity: sha512-sCieVdQrnAl9vYZXIJV3fm1a5dyYOf+kOFk/cOPnQKcqqm7wUy6sodA1+aRO1yQjn1gDSwwgkZ/7GPw77V4ghA==}
     engines: {node: '>= 24'}
     peerDependencies:
       eslint: ^9
@@ -4593,7 +4593,7 @@ snapshots:
 
   '@sindresorhus/is@7.2.0': {}
 
-  '@slashnephy/eslint-config@3.0.353(@types/estree@1.0.9)(@types/node@25.8.0)(@typescript-eslint/eslint-plugin@8.59.3(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(storybook@10.4.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@testing-library/dom@10.4.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(ts-declaration-location@1.0.7(typescript@6.0.3))':
+  '@slashnephy/eslint-config@3.0.355(@types/estree@1.0.9)(@types/node@25.8.0)(@typescript-eslint/eslint-plugin@8.59.3(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.4(jiti@2.7.0))(storybook@10.4.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@testing-library/dom@10.4.1)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(ts-declaration-location@1.0.7(typescript@6.0.3))':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.7.1(eslint@9.39.4(jiti@2.7.0))
       '@eslint-react/eslint-plugin': 2.13.0(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3)
