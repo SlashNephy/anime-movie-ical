@@ -25,8 +25,8 @@ importers:
         specifier: 4.20260702.1
         version: 4.20260702.1
       '@slashnephy/eslint-config':
-        specifier: 3.0.446
-        version: 3.0.446(@types/node@26.4.1)(@typescript-eslint/eslint-plugin@8.69.0(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))
+        specifier: 3.0.447
+        version: 3.0.447(@types/node@26.4.1)(@typescript-eslint/eslint-plugin@8.69.0(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))
       eslint:
         specifier: 9.39.5
         version: 9.39.5(jiti@2.7.0)
@@ -890,8 +890,8 @@ packages:
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
     engines: {node: '>=18'}
 
-  '@slashnephy/eslint-config@3.0.446':
-    resolution: {integrity: sha512-YyIrSto3I0MPk+alseM+SkDs8LmyP+pOMtO+iQ9OR8mfmxgSFraV8LfMNIe38jJ7bj79uK4DouRziZ9enYmTew==}
+  '@slashnephy/eslint-config@3.0.447':
+    resolution: {integrity: sha512-OP8YoA1SYMg0fHBxXfuvx5S+UfqLCNlRDLIh9fgWPl0PJbLjq5gohZ9dYOWEtolEDn/wabr974lIt7b0v4SKug==}
     engines: {node: '>= 24'}
     peerDependencies:
       eslint: ^10
@@ -3379,7 +3379,7 @@ snapshots:
 
   '@sindresorhus/is@7.2.0': {}
 
-  '@slashnephy/eslint-config@3.0.446(@types/node@26.4.1)(@typescript-eslint/eslint-plugin@8.69.0(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))':
+  '@slashnephy/eslint-config@3.0.447(@types/node@26.4.1)(@typescript-eslint/eslint-plugin@8.69.0(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.69.0(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0))':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.7.2(eslint@9.39.5(jiti@2.7.0))
       '@eslint-react/eslint-plugin': 5.18.7(eslint@9.39.5(jiti@2.7.0))(typescript@6.0.3)
